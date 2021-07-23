@@ -111,6 +111,6 @@ function draw() {
         textSize(36)
         fill(255)
         text("The power pellets will be mine.", 20,  100)
-        text("Suffer.", 24, 100)
+        text("Suffer.", 24, 200)
     }
 }
