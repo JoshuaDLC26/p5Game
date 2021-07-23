@@ -17,8 +17,8 @@ let myLeft, myRight, myTop, myBottom;
 let enemyLeft, enemyRight, enemyTop, enemyBottom;
 
 function preload(){
-    ghostImage= loadImage("Images/ghost2.png");
-    pacmanImage= loadImage("Images/pacman2.png");
+    ghostImage= loadImage("./Images/ghost2.png");
+    pacmanImage= loadImage("./Images/pacman2.png");
 }
 function setup() {
     createCanvas(500, 500);
