@@ -108,6 +108,8 @@ function draw() {
 
     if (myLeft > enemyRight || myRight < enemyLeft || myTop > enemyBottom || myBottom < enemyTop) {
         time +=1
+        enemyXSpeed+=1;
+        enemyYSpeed+=1;
     }
 
     else {
