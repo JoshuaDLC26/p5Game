@@ -108,8 +108,8 @@ function draw() {
 
     if (myLeft > enemyRight || myRight < enemyLeft || myTop > enemyBottom || myBottom < enemyTop) {
         time +=1
-        enemyXSpeed+=1;
-        enemyYSpeed+=1;
+        enemyXSpeed+=enemyXSpeed;
+        enemyYSpeed+=enemyYSpeed;
     }
 
     else {
@@ -119,5 +119,6 @@ function draw() {
         fill(255);
         text("The power pellets will be mine.", 20,  100);
         text("Suffer.", 24, 200);
+        text( "Time Lived: + time",24,400);
     }
 }
