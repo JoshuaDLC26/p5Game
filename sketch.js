@@ -1,4 +1,4 @@
-int time=0;
+let time=0;
 let myXPos = 100;
 let myYPos = 100;
 let enemyXPos = 300;
