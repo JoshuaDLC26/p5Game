@@ -107,7 +107,7 @@ function draw() {
     enemyBottom = enemyYPos + 25;
 
     if (myLeft > enemyRight || myRight < enemyLeft || myTop > enemyBottom || myBottom < enemyTop) {
-        time +=1;
+        time +=0.5;
     }
 
     else {
