@@ -35,6 +35,7 @@ function mouseClicked(){
         enemyYPos = random(500)
         enemyXSpeed = random(-15,15)
         enemyYSpeed = random(-15,15) 
+        time =0;
     }
     
 }
