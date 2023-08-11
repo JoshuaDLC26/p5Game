@@ -49,15 +49,20 @@ function draw() {
 
     image(pacmanImage, enemyXPos-25, enemyYPos-25, 50,50);
     // randomizes the enemy movement 
-    enemyXPos += enemyXSpeed * enemyXDir
-    enemyYPos += enemyYSpeed * enemyYDir
-    
+    enemyXPos += enemyXSpeed * enemyXDir;
+    enemyYPos += enemyYSpeed * enemyYDir;
+    if(enemyXSpeed==0){
+        enemyXSpeed = random(-15,15);
+    }
+    if(enemyYSpeed==0){
+        enemyYSpeed = random(-15,15);
+    }
     if (enemyXPos < 25 || enemyXPos > 475) {
-        enemyXDir *= -1
+        enemyXDir *= -1;
     }
 
     if (enemyYPos < 25 || enemyYPos > 475) {
-        enemyYDir *= -1
+        enemyYDir *= -1;
     }
 
     // fill(255, 0, 0);
@@ -70,7 +75,7 @@ function draw() {
 
     fill(255);
     textSize(20);
-    text("Restart",15,30)
+    text("Restart",15,30);
 
    
     
@@ -108,9 +113,9 @@ function draw() {
     else {
         enemyXSpeed = 0;
         enemyYSpeed = 0;
-        textSize(36)
-        fill(255)
-        text("The power pellets will be mine.", 20,  100)
-        text("Suffer.", 24, 200)
+        textSize(36);
+        fill(255);
+        text("The power pellets will be mine.", 20,  100);
+        text("Suffer.", 24, 200);
     }
 }
