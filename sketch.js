@@ -8,7 +8,6 @@ let enemyYDir = 1;
 let enemyXSpeed;
 let enemyYSpeed;
 
-time +=1;
 
 let ghostImage;
 let pacmanImage;
@@ -117,6 +116,6 @@ function draw() {
         fill(255);
         text("The power pellets will be mine.", 20,  100);
         text("Suffer.", 24, 200);
-        text(time.toString() ,24,400);
+        text("Time survived:" + time.toString() ,24,400);
     }
 }
