@@ -119,6 +119,6 @@ function draw() {
         fill(255);
         text("The power pellets will be mine.", 20,  100);
         text("Suffer.", 24, 200);
-        text( "Time Lived: + time",24,400);
+        text( time.string,300,400);
     }
 }
